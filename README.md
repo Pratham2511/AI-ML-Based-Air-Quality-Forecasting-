@@ -148,7 +148,7 @@ Returns MAE, RMSE, R2, MAPE, feature count, date range, and model type.
 
 ## Notes
 
-- If you open `http://127.0.0.1:8000` directly, it now returns a JSON status response.
+- If you open `http://127.0.0.1:8000` directly, it returns a JSON status response.
 - CORS is enabled for frontend dev origins:
   - `http://localhost:5173`
   - `http://127.0.0.1:5173`
