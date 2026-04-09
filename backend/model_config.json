@@ -1,0 +1,50 @@
+{
+  "feature_cols": [
+    "pm25",
+    "pm10",
+    "no2",
+    "so2",
+    "co",
+    "o3",
+    "temp",
+    "humidity",
+    "precip",
+    "wind_speed",
+    "aqi",
+    "pollution_index",
+    "month_sin",
+    "month_cos",
+    "doy_sin",
+    "doy_cos",
+    "is_weekend",
+    "season_code",
+    "city_code",
+    "pm25_7d_avg",
+    "pm25_7d_std",
+    "pm25_lag1",
+    "pm25_lag3",
+    "pm25_lag7"
+  ],
+  "target_cols": [
+    "pm25",
+    "pm10",
+    "no2",
+    "so2",
+    "co",
+    "o3"
+  ],
+  "sequence_length": 30,
+  "forecast_steps": 30,
+  "cities": [
+    "Mumbai",
+    "Delhi"
+  ],
+  "model_type": "Bidirectional_LSTM",
+  "data_source": "CPCB via Kaggle + Open-Meteo weather",
+  "metrics": {
+    "MAE": 122.98,
+    "RMSE": 141.63,
+    "R2": -0.0049,
+    "MAPE": 266.74
+  }
+}
